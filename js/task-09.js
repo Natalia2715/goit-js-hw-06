@@ -5,8 +5,9 @@ function getRandomHexColor() {
 }
 
 const setBg = () => {
-  document.body.style.backgroundColor = getRandomHexColor();
-  colorName.innerHTML = `${getRandomHexColor()}`;
+  const color = getRandomHexColor();
+  document.body.style.backgroundColor = color;
+  colorName.innerHTML = `${color}`;
 }
 
 changeBtn.addEventListener("click", setBg);
